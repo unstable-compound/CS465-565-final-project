@@ -1,0 +1,7 @@
+header {
+    page-break-after: always;
+    
+}
+section, footer {
+    margin: 3%;
+}
