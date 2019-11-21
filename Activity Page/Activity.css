@@ -1,0 +1,116 @@
+
+.container{
+   
+    border: 10px;
+}
+
+.box3{
+    height: 150px;
+}
+.box4{
+    
+    height: 300px;
+    background: url("activitypic1.jpg");
+    background-size: 400px, 300px;
+}
+.box5{
+   
+    height: 150px;
+    margin: 42px 0 0 0;
+}
+.btn1{
+    position: absolute;
+        top: 55%;
+        left: 40%;
+}
+.btn2{
+    position: absolute;
+        top: 55%;
+        left: 30%;
+
+}
+.box6{
+    
+    height: 150px;
+    margin: 42px 0 0 0;
+}
+.box7{
+
+    height: 300px;
+    background: url(activitypic3.jpg);
+    
+    
+}
+
+.box8{
+ 
+    height: 500px;
+}
+
+.box8 h3{
+    position: absolute;
+    top:20%
+    
+}
+
+.box8 div{
+    position: absolute;
+    top: 30%; 
+}
+/*need to complete media queries*/
+/**********************************/
+/**********************************/
+
+@media screen and (max-width:1200px){
+    .box4{
+        background-size: 325px;
+    }
+    .box7{
+        background-size: 600px;
+    }
+    .box5 h5{
+        font-size: 12px;
+    }
+    .box6 h5{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:990px){
+    .box4{
+        background-size: 255px;
+    }
+    .box7{
+        background-size: 487px;
+    }
+    .box3 h1{
+        font-size: 20px;
+    }
+    .box5 h3{
+        font-size: 20px;
+    }
+    .box6 h3{
+        font-size: 20px;
+    }
+    .box6 h5{
+        /*visibility: hidden;*/
+        display: none;
+    }
+    .box5 h5{
+        /*visibility: hidden;*/
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:768px){
+    .box4{
+        background-size: 289px;
+    }
+}
+
+@media screen and (max-width:576px){
+    .box4{
+        background-size: 255px;
+    }
+}
