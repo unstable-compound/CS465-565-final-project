@@ -1,0 +1,73 @@
+section, header, div{
+    margin: 10px;
+    /*border: solid black 1px;
+    */
+}
+.scrollspy-example {
+    position: relative;
+    height: 200px;
+    margin-top: 0.5rem;
+    overflow: auto;
+  }
+
+  #map {
+    height: 400px;  /* The height is 400 pixels */
+    width: 100%;  /* The width is the width of the web page */
+   }
+/*need to complete media queries*/
+/**********************************/
+/**********************************/
+
+@media screen and (max-width:1200px){
+    .box4{
+        background-size: 325px;
+    }
+    .box7{
+        background-size: 600px;
+    }
+    .box5 h5{
+        font-size: 12px;
+    }
+    .box6 h5{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:990px){
+    .box4{
+        background-size: 255px;
+    }
+    .box7{
+        background-size: 487px;
+    }
+    .box3 h1{
+        font-size: 20px;
+    }
+    .box5 h3{
+        font-size: 20px;
+    }
+    .box6 h3{
+        font-size: 20px;
+    }
+    .box6 h5{
+        /*visibility: hidden;*/
+        display: none;
+    }
+    .box5 h5{
+        /*visibility: hidden;*/
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:768px){
+    .box4{
+        background-size: 289px;
+    }
+}
+
+@media screen and (max-width:576px){
+    .box4{
+        background-size: 255px;
+    }
+}
