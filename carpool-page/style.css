@@ -1,8 +1,19 @@
 section, header, div{
     margin: 10px;
-    border: solid black 1px;
+    /*border: solid black 1px;
+    */
 }
+.scrollspy-example {
+    position: relative;
+    height: 200px;
+    margin-top: 0.5rem;
+    overflow: auto;
+  }
 
+  #map {
+    height: 400px;  /* The height is 400 pixels */
+    width: 100%;  /* The width is the width of the web page */
+   }
 /*need to complete media queries*/
 /**********************************/
 /**********************************/
