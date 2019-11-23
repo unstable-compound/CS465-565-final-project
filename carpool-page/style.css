@@ -1,7 +1,12 @@
-section, header, div{
+  /*section, header, div{
     margin: 10px;
-    /*border: solid black 1px;
-    */
+    border: solid black 1px;
+
+}
+*/
+/*  ^^^^^^^ For formating while wireframing  ^^^^ */  
+section, header {
+    margin: 10%;
 }
 .scrollspy-example {
     position: relative;
