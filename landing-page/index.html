@@ -24,24 +24,40 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   </head>
   <!--****************************************************************************************************************-->
   <!--navigation bar-->
 
   <body>
-    <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">FIND A BUDDY</a>
-        </div>
+    <nav class="navbar navbar-dark navbar-expand-lg navbar-inverse">
+      <a class="navbar-brand" href="#">FIND A BUDDY</a>
+      <button
+        class="navbar-toggler navbar-toggler-right"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="nav navbar-nav">
-          <li>
-            <a href="#" class="btn  btn-lg">
-              <span class="glyphicon glyphicon-home"></span> Home
-            </a>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><span class="glyphicon glyphicon-home"></span> Home</a
+            >
           </li>
-          <li><a href="#">Login</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
         </ul>
       </div>
     </nav>
@@ -67,59 +83,7 @@
                 activity
               </p>
             </div>
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-toggle="modal"
-              data-target="#activityBuddyModal"
-            >
-              Login/Signup
-            </button>
-            <!-- Button End-->
 
-            <!-- Modal -->
-            <div
-              class="modal fade"
-              id="activityBuddyModal"
-              tabindex="-1"
-              role="dialog"
-              aria-labelledby="activityBuddyModalTitle"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="activityBuddyModalTitle">
-                      Activity Buddy Finder
-                    </h5>
-                    <button
-                      type="button"
-                      class="close"
-                      data-dismiss="modal"
-                      aria-label="Close"
-                    >
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    placeholder for common sign up and login page
-                  </div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-dismiss="modal"
-                    >
-                      Close
-                    </button>
-                    <button type="button" class="btn btn-primary">
-                      Placeholder
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- End Modal-->
             <input
               type="button"
               class="btn btn-primary"
@@ -141,82 +105,27 @@
                 Studying together is always better than studying alone!
               </p>
             </div>
-            <!-- Button trigger modal -->
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-toggle="modal"
-              data-target="#studyBuddyModal"
-            >
-              Login/Signup
-            </button>
-            <!-- Button End-->
 
-            <!-- Modal -->
-            <div
-              class="modal fade"
-              id="studyBuddyModal"
-              tabindex="-1"
-              role="dialog"
-              aria-labelledby="studyBuddyModalTitle"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="studyBuddyModalTitle">
-                      Study Buddy Finder
-                    </h5>
-                    <button
-                      type="button"
-                      class="close"
-                      data-dismiss="modal"
-                      aria-label="Close"
-                    >
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    placeholder for the common login/signup page that I want to
-                    be triggered
-                  </div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-dismiss="modal"
-                    >
-                      Close
-                    </button>
-                    <button type="button" class="btn btn-primary">
-                      Placeholder.
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- End Modal-->
             <input
               type="button"
               class="btn btn-primary"
               onclick="location.href='../assignment-partner-page/Assignment_partner.html';"
-              value="Find Studdy Buddy"
+              value="Find Study Buddy"
             />
           </div>
 
           <div class="card">
             <img
               class="img-thumbnail card-image-top"
-              src="imgs/cartoon-car.png"
+              src="imgs/carpool.jpg"
               alt=""
             />
             <div class="card-body">
               <h4 class="card-title">Carpool Buddy Finder</h4>
               <p class="card-text">
                 Find a carpool buddy to reduce your transportation costs and
-                your carbon footprint. Do you have a car?
-                <a href="#"> Sign up as a driver.</a> Do you need a ride?
-                <a href="#">Sign up as a rider.</a>
+                your carbon footprint. Do you have a car? Sign up as a driver.
+                Do you need a ride? Sign up as a rider.
               </p>
             </div>
             <!-- Button trigger modal -->
