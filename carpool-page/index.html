@@ -33,7 +33,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
     <script src="user-demo-objects.js"></script>
-    <script src="userlists.js"></script>
+    <script src="userlists.js">
+      document.addEventListener("DOMContentLoaded", populate_drivers());
+    </script>
     <script src="google-api.js"></script>
   </head>
 
@@ -120,6 +122,7 @@
           <div class="row">
             <div class="col">
               <h2>Available Drivers</h2>
+
               <div
                 data-spy="scroll"
                 data-target="#navbar-example2"
@@ -127,7 +130,7 @@
                 class="scrollspy-example"
               >
                 <div>
-                  <h4>username</h4>
+                  <h4 id="driver1"></h4>
                   <p>
                     <input type="button" class="btn-primary" value="Contact" />
                     <input
@@ -138,7 +141,7 @@
                   </p>
                 </div>
                 <div>
-                  <h4>username</h4>
+                  <h4 id="driver2"></h4>
                   <p>
                     <input type="button" class="btn-primary" value="Contact" />
                     <input
@@ -149,7 +152,7 @@
                   </p>
                 </div>
                 <div>
-                  <h4>username</h4>
+                  <h4 id="driver3"></h4>
                   <p>
                     <input type="button" class="btn-primary" value="Contact" />
                     <input
@@ -160,7 +163,7 @@
                   </p>
                 </div>
                 <div>
-                  <h4>username</h4>
+                  <h4 id="driver4"></h4>
                   <p>
                     <input type="button" class="btn-primary" value="Contact" />
                     <input
