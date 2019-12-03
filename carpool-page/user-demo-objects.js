@@ -63,3 +63,29 @@ Riders = {
   }
 
 }
+
+
+
+
+//returns array of drivers to use to access the JSON obj's that have the details 
+//for each driver
+function list_of_drivers(){
+  
+  var arrayOfdrivers = [];
+  let x;
+  for (x in Drivers){
+    arrayOfdrivers.push(x);
+  }
+  return arrayOfdrivers;
+}
+
+//returns array of riders to use to access the JSON
+//obj's that have the details for each rider 
+function list_of_riders(){
+  var arrayOfRiders = [];
+  let x;
+  for (x in Riders){
+    arrayOfRiders.push(x);
+  }
+  return arrayOfRiders;
+}
