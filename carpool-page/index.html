@@ -33,9 +33,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
     <script src="user-demo-objects.js"></script>
-    <script src="userlists.js">
-      document.addEventListener("DOMContentLoaded", populate_drivers());
-    </script>
     <script src="google-api.js"></script>
   </head>
 
@@ -132,7 +129,9 @@
                 <div>
                   <h4 id="driver1"></h4>
                   <p>
-                    <input type="button" class="btn-primary" value="Contact" />
+                    <a id="driver1-mail" href=""
+                      ><input type="button" class="btn-primary" value="Contact"
+                    /></a>
                     <input
                       type="button"
                       class="btn-primary"
@@ -143,7 +142,9 @@
                 <div>
                   <h4 id="driver2"></h4>
                   <p>
-                    <input type="button" class="btn-primary" value="Contact" />
+                    <a id="driver2-mail" href=""
+                      ><input type="button" class="btn-primary" value="Contact"
+                    /></a>
                     <input
                       type="button"
                       class="btn-primary"
@@ -154,7 +155,9 @@
                 <div>
                   <h4 id="driver3"></h4>
                   <p>
-                    <input type="button" class="btn-primary" value="Contact" />
+                    <a id="driver3-mail" href=""
+                      ><input type="button" class="btn-primary" value="Contact"
+                    /></a>
                     <input
                       type="button"
                       class="btn-primary"
@@ -165,7 +168,10 @@
                 <div>
                   <h4 id="driver4"></h4>
                   <p>
-                    <input type="button" class="btn-primary" value="Contact" />
+                    <a id="driver4-mail" href=""
+                      ><input type="button" class="btn-primary" value="Contact"
+                    /></a>
+
                     <input
                       type="button"
                       class="btn-primary"
@@ -186,9 +192,11 @@
                 class="scrollspy-example"
               >
                 <div>
-                  <h4>username</h4>
+                  <h4 id="rider1"></h4>
                   <p>
-                    <input type="button" class="btn-primary" value="Contact" />
+                    <a id="rider1-mail" href=""
+                      ><input type="button" class="btn-primary" value="Contact"
+                    /></a>
                     <input
                       type="button"
                       class="btn-primary"
@@ -197,9 +205,11 @@
                   </p>
                 </div>
                 <div>
-                  <h4>username</h4>
+                  <h4 id="rider2"></h4>
                   <p>
-                    <input type="button" class="btn-primary" value="Contact" />
+                    <a id="rider2-mail" href=""
+                      ><input type="button" class="btn-primary" value="Contact"
+                    /></a>
                     <input
                       type="button"
                       class="btn-primary"
@@ -208,9 +218,11 @@
                   </p>
                 </div>
                 <div>
-                  <h4>username</h4>
+                  <h4 id="rider3"></h4>
                   <p>
-                    <input type="button" class="btn-primary" value="Contact" />
+                    <a id="rider3-mail" href=""
+                      ><input type="button" class="btn-primary" value="Contact"
+                    /></a>
                     <input
                       type="button"
                       class="btn-primary"
@@ -219,9 +231,12 @@
                   </p>
                 </div>
                 <div>
-                  <h4>username</h4>
+                  <h4 id="rider4"></h4>
                   <p>
-                    <input type="button" class="btn-primary" value="Contact" />
+                    <a id="rider4-mail" href=""
+                      ><input type="button" class="btn-primary" value="Contact"
+                    /></a>
+
                     <input
                       type="button"
                       class="btn-primary"
@@ -233,17 +248,7 @@
             </div>
           </div>
         </div>
-        <script>
-            let driverObj = Drivers;
-            let x, id;
-            let counter = 1;
-            for (x in driverObj) {
-              id = "driver";
-              id = id.concat(counter.toString(10));
-              document.getElementById(id).textContent = x;
-              counter += 1;
-            }
-          </script>
+        <script async defer src="userlists.js" type="text/javascript"></script>
 
         <div class="col-md">
           Placeholder google map search box area
