@@ -233,6 +233,17 @@
             </div>
           </div>
         </div>
+        <script>
+            let driverObj = Drivers;
+            let x, id;
+            let counter = 1;
+            for (x in driverObj) {
+              id = "driver";
+              id = id.concat(counter.toString(10));
+              document.getElementById(id).textContent = x;
+              counter += 1;
+            }
+          </script>
 
         <div class="col-md">
           Placeholder google map search box area
