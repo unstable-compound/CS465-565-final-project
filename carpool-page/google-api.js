@@ -112,6 +112,44 @@ function initialize_rider_markers() {
   }
 }
 
+//TODO: need func that will spawn correct callback functions for each button
+//based on the argument it gets.
+//A dif function will use it to add those functions where they go...
+
+function driverFactory(index) {
+ 
+   let fun = (index) => { 
+    const infoWindow = arrayOfDriverInfoWindows[index];
+    const marker = arrayOfDriverMarkers[index];
+    
+    infoWindow.open(map, marker);
+    //zoom map
+    map.setZoom(10);
+    map.setCenter(marker.getPosition());
+  }
+  return fun(index);
+}
+
+function addFunToDriverButton() {
+  let x, counter;
+  counter = 1;
+  let index = 0;
+  for (x in Drivers) {
+    let id = "driver";
+    //get id for the button for this marker 
+    id = id.concat(counter.toString(10), "-map-button");
+
+   
+    
+
+    //add function to button
+    document.getElementById(id).addEventListener('input', driverFactory(index));
+    counter += 1;
+    index += 1;
+  }
+}
+
+
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: 46.514, lng: -122.644 },
@@ -119,6 +157,11 @@ function initMap() {
   });
 
 
+
+
+  initialize_driver_markers();
+  initialize_rider_markers();
+  //addFunToDriverButton();
   // Try HTML5 geolocation.
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(
@@ -161,9 +204,6 @@ function initMap() {
     // Browser doesn't support Geolocation
     handleLocationError(false, infoWindow, map.getCenter());
   }
-
-  initialize_driver_markers();
-  initialize_rider_markers();
 }
 
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {

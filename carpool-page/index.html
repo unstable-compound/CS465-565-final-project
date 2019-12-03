@@ -133,10 +133,24 @@
                       ><input type="button" class="btn-primary" value="Contact"
                     /></a>
                     <input
+                      id="driver1-map-button"
                       type="button"
                       class="btn-primary"
                       value="View on Map"
                     />
+                    <script>
+                      document.getElementById(
+                        "driver1-map-button"
+                      ).onclick = () => {
+                        const infoWindow = arrayOfDriverInfoWindows[0];
+                        const marker = arrayOfDriverMarkers[0];
+
+                        infoWindow.open(map, marker);
+                        //zoom map
+                        map.setZoom(10);
+                        map.setCenter(marker.getPosition());
+                      };
+                    </script>
                   </p>
                 </div>
                 <div>
@@ -146,10 +160,24 @@
                       ><input type="button" class="btn-primary" value="Contact"
                     /></a>
                     <input
+                      id="driver2-map-button"
                       type="button"
                       class="btn-primary"
                       value="View on Map"
                     />
+                    <script>
+                      document.getElementById(
+                        "driver2-map-button"
+                      ).onclick = () => {
+                        const infoWindow = arrayOfDriverInfoWindows[1];
+                        const marker = arrayOfDriverMarkers[1];
+
+                        infoWindow.open(map, marker);
+                        //zoom map
+                        map.setZoom(10);
+                        map.setCenter(marker.getPosition());
+                      };
+                    </script>
                   </p>
                 </div>
                 <div>
@@ -159,10 +187,24 @@
                       ><input type="button" class="btn-primary" value="Contact"
                     /></a>
                     <input
+                      id="driver3-map-button"
                       type="button"
                       class="btn-primary"
                       value="View on Map"
                     />
+                    <script>
+                      document.getElementById(
+                        "driver3-map-button"
+                      ).onclick = () => {
+                        const infoWindow = arrayOfDriverInfoWindows[2];
+                        const marker = arrayOfDriverMarkers[2];
+
+                        infoWindow.open(map, marker);
+                        //zoom map
+                        map.setZoom(10);
+                        map.setCenter(marker.getPosition());
+                      };
+                    </script>
                   </p>
                 </div>
                 <div>
@@ -173,10 +215,24 @@
                     /></a>
 
                     <input
+                      id="driver4-map-button"
                       type="button"
                       class="btn-primary"
                       value="View on Map"
                     />
+                    <script>
+                      document.getElementById(
+                        "driver4-map-button"
+                      ).onclick = () => {
+                        const infoWindow = arrayOfDriverInfoWindows[3];
+                        const marker = arrayOfDriverMarkers[3];
+
+                        infoWindow.open(map, marker);
+                        //zoom map
+                        map.setZoom(10);
+                        map.setCenter(marker.getPosition());
+                      };
+                    </script>
                   </p>
                 </div>
               </div>
@@ -198,10 +254,24 @@
                       ><input type="button" class="btn-primary" value="Contact"
                     /></a>
                     <input
+                      id="rider1-map-button"
                       type="button"
                       class="btn-primary"
                       value="View on Map"
                     />
+                    <script>
+                      document.getElementById(
+                        "rider1-map-button"
+                      ).onclick = () => {
+                        let infoWindow = arrayOfRiderInfoWindows[0];
+                        let marker = arrayOfRiderMarkers[0];
+                        infoWindow.open(map, marker);
+                        //infoWindow.open(map, marker);
+                        //zoom map
+                        map.setZoom(10);
+                        map.setCenter(marker.getPosition());
+                      };
+                    </script>
                   </p>
                 </div>
                 <div>
@@ -211,10 +281,24 @@
                       ><input type="button" class="btn-primary" value="Contact"
                     /></a>
                     <input
+                      id="rider2-map-button"
                       type="button"
                       class="btn-primary"
                       value="View on Map"
                     />
+                    <script>
+                        document.getElementById(
+                          "rider2-map-button"
+                        ).onclick = () => {
+                          let infoWindow = arrayOfRiderInfoWindows[1];
+                          let marker = arrayOfRiderMarkers[1];
+                          infoWindow.open(map, marker);
+                          //infoWindow.open(map, marker);
+                          //zoom map
+                          map.setZoom(10);
+                          map.setCenter(marker.getPosition());
+                        };
+                    </script>
                   </p>
                 </div>
                 <div>
@@ -224,10 +308,24 @@
                       ><input type="button" class="btn-primary" value="Contact"
                     /></a>
                     <input
+                      id="rider3-map-button"
                       type="button"
                       class="btn-primary"
                       value="View on Map"
                     />
+                    <script>
+                        document.getElementById(
+                          "rider3-map-button"
+                        ).onclick = () => {
+                          let infoWindow = arrayOfRiderInfoWindows[2];
+                          let marker = arrayOfRiderMarkers[2];
+                          infoWindow.open(map, marker);
+                          //infoWindow.open(map, marker);
+                          //zoom map
+                          map.setZoom(10);
+                          map.setCenter(marker.getPosition());
+                        };
+                    </script>
                   </p>
                 </div>
                 <div>
@@ -238,10 +336,24 @@
                     /></a>
 
                     <input
+                      id="rider4-map-button"
                       type="button"
                       class="btn-primary"
                       value="View on Map"
                     />
+                    <script>
+                        document.getElementById(
+                          "rider4-map-button"
+                        ).onclick = () => {
+                          let infoWindow = arrayOfRiderInfoWindows[3];
+                          let marker = arrayOfRiderMarkers[3];
+                          infoWindow.open(map, marker);
+                          //infoWindow.open(map, marker);
+                          //zoom map
+                          map.setZoom(10);
+                          map.setCenter(marker.getPosition());
+                        };
+                    </script>
                   </p>
                 </div>
               </div>

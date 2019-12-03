@@ -32,8 +32,8 @@ function populate_riders() {
 }
 
 
-//THen do same for riders. 
-//Use these to get LatLong for making markers in google-api.js
+
+
 
 populate_drivers();
 populate_riders();
