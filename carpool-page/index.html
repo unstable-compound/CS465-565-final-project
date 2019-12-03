@@ -31,39 +31,44 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="user-demo-objects.js"></script>
+    <script src="google-api.js"></script>
   </head>
 
   <body>
     <!--****************************************************************************************************************-->
     <!--navigation bar-->
     <nav class="navbar navbar-dark navbar-expand-lg navbar-inverse">
-        <a class="navbar-brand" href="#">FIND A BUDDY</a>
-        <button
-          class="navbar-toggler navbar-toggler-right"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-  
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="../landing-page/index.html"
-                ><span class="glyphicon glyphicon-home"></span> Home</a
-              >
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#">Leave a Review</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <a class="navbar-brand" href="#">FIND A BUDDY</a>
+      <button
+        class="navbar-toggler navbar-toggler-right"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../landing-page/index.html"
+              ><span class="glyphicon glyphicon-home"></span> Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Leave a Review</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <!--**********************************************************************************-->
     <div class="container">
       <header class="row">
@@ -114,6 +119,7 @@
           <div class="row">
             <div class="col">
               <h2>Available Drivers</h2>
+
               <div
                 data-spy="scroll"
                 data-target="#navbar-example2"
@@ -121,47 +127,112 @@
                 class="scrollspy-example"
               >
                 <div>
-                  <h4>username</h4>
+                  <h4 id="driver1"></h4>
                   <p>
-                    <input type="button" class="btn-primary" value="Contact" />
+                    <a id="driver1-mail" href=""
+                      ><input type="button" class="btn-primary" value="Contact"
+                    /></a>
                     <input
+                      id="driver1-map-button"
                       type="button"
                       class="btn-primary"
                       value="View on Map"
                     />
+                    <script>
+                      document.getElementById(
+                        "driver1-map-button"
+                      ).onclick = () => {
+                        const infoWindow = arrayOfDriverInfoWindows[0];
+                        const marker = arrayOfDriverMarkers[0];
+
+                        infoWindow.open(map, marker);
+                        //zoom map
+                        map.setZoom(10);
+                        map.setCenter(marker.getPosition());
+                      };
+                    </script>
                   </p>
                 </div>
                 <div>
-                  <h4>username</h4>
+                  <h4 id="driver2"></h4>
                   <p>
-                    <input type="button" class="btn-primary" value="Contact" />
+                    <a id="driver2-mail" href=""
+                      ><input type="button" class="btn-primary" value="Contact"
+                    /></a>
                     <input
+                      id="driver2-map-button"
                       type="button"
                       class="btn-primary"
                       value="View on Map"
                     />
+                    <script>
+                      document.getElementById(
+                        "driver2-map-button"
+                      ).onclick = () => {
+                        const infoWindow = arrayOfDriverInfoWindows[1];
+                        const marker = arrayOfDriverMarkers[1];
+
+                        infoWindow.open(map, marker);
+                        //zoom map
+                        map.setZoom(10);
+                        map.setCenter(marker.getPosition());
+                      };
+                    </script>
                   </p>
                 </div>
                 <div>
-                  <h4>username</h4>
+                  <h4 id="driver3"></h4>
                   <p>
-                    <input type="button" class="btn-primary" value="Contact" />
+                    <a id="driver3-mail" href=""
+                      ><input type="button" class="btn-primary" value="Contact"
+                    /></a>
                     <input
+                      id="driver3-map-button"
                       type="button"
                       class="btn-primary"
                       value="View on Map"
                     />
+                    <script>
+                      document.getElementById(
+                        "driver3-map-button"
+                      ).onclick = () => {
+                        const infoWindow = arrayOfDriverInfoWindows[2];
+                        const marker = arrayOfDriverMarkers[2];
+
+                        infoWindow.open(map, marker);
+                        //zoom map
+                        map.setZoom(10);
+                        map.setCenter(marker.getPosition());
+                      };
+                    </script>
                   </p>
                 </div>
                 <div>
-                  <h4>username</h4>
+                  <h4 id="driver4"></h4>
                   <p>
-                    <input type="button" class="btn-primary" value="Contact" />
+                    <a id="driver4-mail" href=""
+                      ><input type="button" class="btn-primary" value="Contact"
+                    /></a>
+
                     <input
+                      id="driver4-map-button"
                       type="button"
                       class="btn-primary"
                       value="View on Map"
                     />
+                    <script>
+                      document.getElementById(
+                        "driver4-map-button"
+                      ).onclick = () => {
+                        const infoWindow = arrayOfDriverInfoWindows[3];
+                        const marker = arrayOfDriverMarkers[3];
+
+                        infoWindow.open(map, marker);
+                        //zoom map
+                        map.setZoom(10);
+                        map.setCenter(marker.getPosition());
+                      };
+                    </script>
                   </p>
                 </div>
               </div>
@@ -177,56 +248,122 @@
                 class="scrollspy-example"
               >
                 <div>
-                  <h4>username</h4>
+                  <h4 id="rider1"></h4>
                   <p>
-                    <input type="button" class="btn-primary" value="Contact" />
+                    <a id="rider1-mail" href=""
+                      ><input type="button" class="btn-primary" value="Contact"
+                    /></a>
                     <input
+                      id="rider1-map-button"
                       type="button"
                       class="btn-primary"
                       value="View on Map"
                     />
+                    <script>
+                      document.getElementById(
+                        "rider1-map-button"
+                      ).onclick = () => {
+                        let infoWindow = arrayOfRiderInfoWindows[0];
+                        let marker = arrayOfRiderMarkers[0];
+                        infoWindow.open(map, marker);
+                        //infoWindow.open(map, marker);
+                        //zoom map
+                        map.setZoom(10);
+                        map.setCenter(marker.getPosition());
+                      };
+                    </script>
                   </p>
                 </div>
                 <div>
-                  <h4>username</h4>
+                  <h4 id="rider2"></h4>
                   <p>
-                    <input type="button" class="btn-primary" value="Contact" />
+                    <a id="rider2-mail" href=""
+                      ><input type="button" class="btn-primary" value="Contact"
+                    /></a>
                     <input
+                      id="rider2-map-button"
                       type="button"
                       class="btn-primary"
                       value="View on Map"
                     />
+                    <script>
+                        document.getElementById(
+                          "rider2-map-button"
+                        ).onclick = () => {
+                          let infoWindow = arrayOfRiderInfoWindows[1];
+                          let marker = arrayOfRiderMarkers[1];
+                          infoWindow.open(map, marker);
+                          //infoWindow.open(map, marker);
+                          //zoom map
+                          map.setZoom(10);
+                          map.setCenter(marker.getPosition());
+                        };
+                    </script>
                   </p>
                 </div>
                 <div>
-                  <h4>username</h4>
+                  <h4 id="rider3"></h4>
                   <p>
-                    <input type="button" class="btn-primary" value="Contact" />
+                    <a id="rider3-mail" href=""
+                      ><input type="button" class="btn-primary" value="Contact"
+                    /></a>
                     <input
+                      id="rider3-map-button"
                       type="button"
                       class="btn-primary"
                       value="View on Map"
                     />
+                    <script>
+                        document.getElementById(
+                          "rider3-map-button"
+                        ).onclick = () => {
+                          let infoWindow = arrayOfRiderInfoWindows[2];
+                          let marker = arrayOfRiderMarkers[2];
+                          infoWindow.open(map, marker);
+                          //infoWindow.open(map, marker);
+                          //zoom map
+                          map.setZoom(10);
+                          map.setCenter(marker.getPosition());
+                        };
+                    </script>
                   </p>
                 </div>
                 <div>
-                  <h4>username</h4>
+                  <h4 id="rider4"></h4>
                   <p>
-                    <input type="button" class="btn-primary" value="Contact" />
+                    <a id="rider4-mail" href=""
+                      ><input type="button" class="btn-primary" value="Contact"
+                    /></a>
+
                     <input
+                      id="rider4-map-button"
                       type="button"
                       class="btn-primary"
                       value="View on Map"
                     />
+                    <script>
+                        document.getElementById(
+                          "rider4-map-button"
+                        ).onclick = () => {
+                          let infoWindow = arrayOfRiderInfoWindows[3];
+                          let marker = arrayOfRiderMarkers[3];
+                          infoWindow.open(map, marker);
+                          //infoWindow.open(map, marker);
+                          //zoom map
+                          map.setZoom(10);
+                          map.setCenter(marker.getPosition());
+                        };
+                    </script>
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <script async defer src="userlists.js" type="text/javascript"></script>
 
         <div class="col-md">
-          Placeholder google map search box area
+          <h2>Locate a Carpool Buddy</h2>
           <div id="map">
             <script
               async
