@@ -31,5 +31,13 @@ function populate_riders() {
   }
 }
 
+function list_of_drivers(){
+  //TODO: 
+  //return array of drivers to use as key while accessing json obj's in
+  //other functions. 
+}
+//THen do same for riders. 
+//Use these to get LatLong for making markers in google-api.js
+
 populate_drivers();
 populate_riders();
